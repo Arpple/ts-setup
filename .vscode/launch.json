@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "test",
+            "name": "run test all",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
                 "--require", "ts-node/register",
@@ -15,6 +15,21 @@
                 "--timeout", "3000",
                 "--colors", "--recursive",
                 "${workspaceFolder}/src/**/*.test.ts"
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run test current",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "--require", "ts-node/register",
+                "-u", "tdd",
+                "--timeout", "3000",
+                "--colors",
+                "--recursive",
+                "${file}"
             ],
             "internalConsoleOptions": "openOnSessionStart"
         }
