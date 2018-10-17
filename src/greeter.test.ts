@@ -6,4 +6,4 @@ describe("greeter", () => {
     it("greeter() return 'Hello + :name'", () => {
         assert.equal(greeter("World"), "Hello World")
     })
-});
+})
