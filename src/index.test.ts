@@ -1,0 +1,1 @@
+describe("example", () => require("./example/index.test"))
