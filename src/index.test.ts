@@ -1,1 +1,1 @@
-describe("example", () => require("./example/index.test"))
+import "./example/index.test"
