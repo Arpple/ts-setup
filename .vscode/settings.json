@@ -1,9 +1,9 @@
 {
     "mocha.files.glob": "src/**/*.test.ts",
     "mocha.sideBarOptions": {
-        "lens": false
+        "autoUpdateTime": 99999,
     },
     "mocha.requires": [
         "ts-node/register"
-    ]
+    ],
 }
