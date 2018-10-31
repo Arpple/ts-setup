@@ -2,7 +2,7 @@ import { assert } from "chai"
 import greeter from "./greeter"
 import * as sinon from "sinon"
 
-describe("fn", () => {
+describe("example/fn", () => {
     it("support object spread", () => {
         const obj = { x: 1, y: 2 }
         assert.deepEqual({ ...obj, y: 3 }, { x: 1, y: 3 })

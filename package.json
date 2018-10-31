@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register src/index.test.ts"
+    "test": "mocha --require ts-node/register src/**/*.test.ts"
   },
   "keywords": [],
   "author": "Arpple",

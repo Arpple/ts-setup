@@ -3,7 +3,7 @@ import { stubInterface } from "ts-sinon"
 import * as sinon from "sinon"
 import { SomeService, doSomething, SomeAsyncService, doSomethingAsync } from "./service"
 
-describe("service", () => {
+describe("example/service", () => {
     it("test mocking service", () => {
         const service = stubInterface<SomeService>()
         service.doSomething = sinon.stub().returns(true)
