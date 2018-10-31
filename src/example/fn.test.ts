@@ -17,8 +17,7 @@ describe("example/fn", () => {
     })
 
     it("should have sinon fake fn", () => {
-        const fake = sinon.fake()
-        fake()
-        assert.isTrue(fake.called)
+        const fake = sinon.fake.returns(4)
+        assert.equal(fake(), 4)
     })
 })
