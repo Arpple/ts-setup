@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register src/**/*.test.ts"
+    "test": "mocha --require ts-node/register --reporter mocha-clearscreen-reporter src/**/*.test.ts",
+    "test:watch": "mocha --require ts-node/register --watch-extensions ts --watch --reporter mocha-clearscreen-reporter src/**/*.test.ts"
   },
   "keywords": [],
   "author": "Arpple",
@@ -17,6 +18,7 @@
     "@types/sinon": "^5.0.5",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
+    "mocha-clearscreen-reporter": "^1.0.1",
     "ts-node": "^7.0.1",
     "ts-sinon": "^1.0.12",
     "typescript": "^3.1.3"
