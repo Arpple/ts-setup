@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register --reporter mocha-clearscreen-reporter src/**/*.test.ts",
-    "test:watch": "mocha --require ts-node/register --watch-extensions ts --watch --reporter mocha-clearscreen-reporter src/**/*.test.ts"
+    "test": "mocha --require ts-node/register --reporter mocha-clearscreen-reporter --reporter min src/**/*.test.ts",
+    "test:watch": "npm run test -- --watch-extensions ts --watch"
   },
   "keywords": [],
   "author": "Arpple",
