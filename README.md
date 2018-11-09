@@ -1,9 +1,7 @@
-template project for typescript + mocha (+ vscode)
+my typescript template project
 
-# feature
-- typescript
-- mocha test
-
-# vscode extension
-- mocha sidebar (*use node v8 lts)
-- debug
+include
+- mocha, chai, sinon
+- npm test script run
+- vscode mocha seting
+- vscode debugger setting
