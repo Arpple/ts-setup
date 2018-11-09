@@ -6,4 +6,22 @@
     "mocha.requires": [
         "ts-node/register"
     ],
+    "fileswitcher.mappings": [
+        {
+            "from": "src/(.+)\\.(.+)",
+            "to": "src/:1.test.:2"
+        },
+        {
+            "from": "src/(.+)\\.test\\.(.+)",
+            "to": "src/:1.:2"
+        },
+    ],
+    "createTests.template.default": [
+        "import { assert } from \"chai\"",
+        "import * as sinon from \"sinon\"",
+        "",
+        "describe(\"\", () => {",
+        "",
+        "})"
+    ],
 }

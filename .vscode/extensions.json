@@ -4,10 +4,11 @@
         "esbenp.prettier-vscode",
         "eg2.tslint",
         "dbaeumer.vscode-eslint",
-        "eskimoblood.create-test",
         "Gruntfuggly.todo-tree",
         "IBM.output-colorizer",
         "maty.vscode-mocha-sidebar",
         "WallabyJs.quokka-vscode",
+        "johnathanludwig.fileswitcher",
+        "hardikmodha.create-tests",
     ]
 }
