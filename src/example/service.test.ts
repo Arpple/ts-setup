@@ -1,5 +1,5 @@
 import { assert } from "chai"
-import { SomeService, doSomething, SomeAsyncService, doSomethingAsync } from "./service"
+import { doSomething, doSomethingAsync, SomeAsyncService, SomeService } from "./service"
 
 describe("example/service", () => {
     it("test mocking service", () => {

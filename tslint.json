@@ -1,0 +1,16 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {
+    },
+    "rules": {
+        "semicolon": false,
+        "eofline": false,
+        "trailing-comma": false,
+        "interface-name": false,
+        "no-consecutive-blank-lines": false
+    },
+    "rulesDirectory": []
+}
