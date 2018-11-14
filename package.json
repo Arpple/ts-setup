@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require ts-node/register --require mocha-clean --reporter min src/**/*.test.ts",
-    "test:watch": "npm run test -- --watch-extensions ts --watch"
+    "test:watch": "npm run test -- --watch-extensions ts --watch",
+    "lint": "tslint src/**/*.ts"
   },
   "keywords": [],
   "author": "Arpple",
