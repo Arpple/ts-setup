@@ -1,6 +1,6 @@
 import { assert } from "chai"
-import greeter from "./greeter"
 import * as sinon from "sinon"
+import greeter from "./greeter"
 
 describe("example/fn", () => {
     it("support object spread", () => {
@@ -13,7 +13,7 @@ describe("example/fn", () => {
     })
 
     it("support es6 Array.find()", () => {
-        assert.equal([1, 2, 3, 4, 5].find(x => x / 2 === 1), 2)
+        assert.equal([1, 2, 3, 4, 5].find((x) => x / 2 === 1), 2)
     })
 
     it("should have sinon fake fn", () => {
