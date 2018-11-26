@@ -1,3 +1,4 @@
 import greeter from "./src/example/greeter"
 
-console.log(greeter("world"))
+const state = { x: 1, y: 2 }
+const { x, ...newState } = state

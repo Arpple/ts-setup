@@ -1,11 +1,5 @@
-export interface SomeService {
-    doSomething(): boolean
-}
+export type SomeFn = () => boolean
+export type SomeAsyncFn = () => Promise<boolean>
 
-export interface SomeAsyncService {
-    doSomething(): Promise<boolean>
-}
-
-export const doSomething = (service: SomeService): boolean => service.doSomething()
-
-export const doSomethingAsync = (service: SomeAsyncService): Promise<boolean> => service.doSomething()
+export const doSomething = (service: SomeFn): boolean => service()
+export const doSomethingAsync = (service: SomeAsyncFn): Promise<boolean> => service()
