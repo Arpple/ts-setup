@@ -26,6 +26,9 @@
         "no-if-statement": true,
 
         // Custom
+        "interface-name": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
         "no-implicit-dependencies": [true, "dev"],
         "no-unused-expression": [true, "warning"]
     }

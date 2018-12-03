@@ -11,7 +11,13 @@
         "lib": [
             "esnext"
         ],
+
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "declaration": true,
         "strict": true,
+
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
