@@ -7,7 +7,7 @@ describe("example/service", () => {
         assert.isTrue(doSomething(mockFn))
     })
 
-    it("test mocking async service", async () => {
+    it("test mocking async service", async() => {
         const service: SomeAsyncFn = () => Promise.resolve(true)
 
         const result = await doSomethingAsync(service)

@@ -24,4 +24,5 @@
         "",
         "})"
     ],
+    "tslint.autoFixOnSave": true
 }

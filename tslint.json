@@ -6,15 +6,115 @@
         "tslint-config-prettier"
     ],
     "rules": {
-        // Recommended built-in rules
-        "no-var-keyword": true,
+        "no-empty-interface": {
+            "severity": "warning"
+        },
+
         "no-parameter-reassignment": true,
-        "typedef": [true, "call-signature"],
+
+        "only-arrow-functions": true,
+
+        "prefer-for-of": true,
+
+        "typedef-whitespace": [true, {
+            "call-signature": "nospace",
+            "index-signature": "nospace",
+            "parameter": "nospace",
+            "property-declaration": "nospace",
+            "variable-declaration": "nospace"
+        }],
+
+        "ban-comma-operator": true,
+
+        "curly": [true, "as-needed"],
+
+        "no-conditional-assignment": true,
+
+        "no-console": {
+            "severity": "warning"
+        },
+
+        "no-construct": true,
+
+        "no-duplicate-switch-case": {
+            "severity": "warning"
+        },
+
+        "no-duplicate-variable": true,
+
+        "no-dynamic-delete": true,
+
+        "no-empty": {
+            "severity": "warning"
+        },
+
+        "no-eval": true,
+
+        "no-object-literal-type-assertion": true,
+
+        "no-string-throw": true,
+
+        "no-this-assignment": true,
+
+        "no-var-keyword": true,
+
+        "prefer-conditional-expression": true,
+
+        "prefer-object-spread": true,
+
+        "triple-equals": true,
+
+        "indent": [true, "spaces"],
+
+        "linebreak-style": [true, "LF"],
+
+        "prefer-const": true,
+
+        "trailing-comma": [true, {
+            "multiline": {
+                "objects": "never",
+                "arrays": "never",
+                "functions": "never",
+                "typeLiterals": "never"
+            }
+        }],
+
+        "arrow-parens": true,
+
+        "arrow-return-shorthand": true,
+
+        "class-name": true,
+
+        "encoding": true,
+
+        "import-spacing": true,
+
+        "no-irregular-whitespace": true,
+
+        "no-trailing-whitespace": true,
+
+        "object-literal-key-quotes": [true, "consistent-as-needed"],
+
+        "one-variable-per-declaration": true,
+
+        "ordered-imports": true,
+
+        "quotemark": [true, "double"],
+
+        "semicolon": [true, "never"],
+
+        "space-before-function-paren": [true, "never"],
+
+        "space-within-parens": [true, "never"],
+
+        "switch-final-break": true,
+
+        "whitespace": [true, "spaces"],
+
+        "no-implicit-dependencies": false,
 
         // Immutability rules
         "readonly-keyword": true,
-        "readonly-array": true,
-        "no-let": true,
         "no-object-mutation": true,
         "no-delete": true,
         "no-method-signature": true,
@@ -22,14 +122,6 @@
         // Functional style rules
         "no-this": true,
         "no-class": true,
-        "no-mixed-interface": true,
-        "no-if-statement": true,
-
-        // Custom
-        "interface-name": false,
-        "ordered-imports": false,
-        "object-literal-sort-keys": false,
-        "no-implicit-dependencies": [true, "dev"],
-        "no-unused-expression": [true, "warning"]
+        "no-mixed-interface": true
     }
 }
