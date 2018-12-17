@@ -9,7 +9,7 @@
     "test:watch": "nodemon -q --ext ts --exec 'npm run test'",
     "lint": "tslint src/**/*.ts",
     "build": "rm -rf dist/* && tsc",
-    "sandbox": "ts-node ./sandbox.tsc"
+    "sandbox": "ts-node ./sandbox.ts"
   },
   "keywords": [],
   "author": "Arpple",
