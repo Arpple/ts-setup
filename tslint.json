@@ -89,11 +89,15 @@
 
         "import-spacing": true,
 
+        "interface-name": false,
+
         "no-irregular-whitespace": true,
 
         "no-trailing-whitespace": true,
 
         "object-literal-key-quotes": [true, "consistent-as-needed"],
+
+        "object-literal-sort-keys": false,
 
         "one-variable-per-declaration": true,
 
