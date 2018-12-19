@@ -1,16 +1,12 @@
-import { assert } from "chai"
+import * as test from "tape"
 import { doSomething, doSomethingAsync, SomeAsyncFn, SomeFn } from "./service"
 
-describe("example/service", () => {
-    it("test mocking service", () => {
-        const mockFn: SomeFn = () => true
-        assert.isTrue(doSomething(mockFn))
-    })
+test("example/service", async(assert) => {
+    const mockFn: SomeFn = () => true
+    assert.true(doSomething(mockFn), "sync service")
 
-    it("test mocking async service", async() => {
-        const service: SomeAsyncFn = () => Promise.resolve(true)
+    const service: SomeAsyncFn = () => Promise.resolve(true)
+    assert.true(await doSomethingAsync(service), "async service")
 
-        const result = await doSomethingAsync(service)
-        assert.isTrue(result)
-    })
+    assert.end()
 })

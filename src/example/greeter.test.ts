@@ -1,8 +1,7 @@
-import { assert } from "chai"
+import * as test from "tape"
 import greeter from "./greeter"
 
-describe("example/greeter", () => {
-    it("greeter() return 'Hello + :name'", () => {
-        assert.equal(greeter("World"), "Hello World")
-    })
+test("example/greeter", (assert) => {
+    assert.equal(greeter("World"), "Hello World", "greeter() concat Hello + <name>")
+    assert.end()
 })
