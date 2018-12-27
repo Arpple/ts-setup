@@ -1,11 +1,4 @@
 {
-    "mocha.files.glob": "src/**/*.test.ts",
-    "mocha.sideBarOptions": {
-        "autoUpdateTime": 99999,
-    },
-    "mocha.requires": [
-        "ts-node/register"
-    ],
     "fileswitcher.mappings": [
         {
             "from": "src/(.+)\\.(.+)",
@@ -17,10 +10,9 @@
         },
     ],
     "createTests.template.default": [
-        "import { assert } from \"chai\"",
-        "import * as sinon from \"sinon\"",
+        "import test from \"ava\"",
         "",
-        "describe(\"\", () => {",
+        "test(\"\", (assert) => {",
         "",
         "})"
     ],
