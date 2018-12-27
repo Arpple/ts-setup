@@ -1,4 +1,4 @@
-import * as test from "tape"
+import test from "ava"
 import { doSomething, doSomethingAsync, SomeAsyncFn, SomeFn } from "./service"
 
 test("example/service", async(assert) => {
@@ -7,6 +7,4 @@ test("example/service", async(assert) => {
 
     const service: SomeAsyncFn = () => Promise.resolve(true)
     assert.true(await doSomethingAsync(service), "async service")
-
-    assert.end()
 })
