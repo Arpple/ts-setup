@@ -8,11 +8,10 @@
 	],
 	"reporter": [
 		"text",
-		"clover"
+		"lcov"
 	],
 	"extension": [
 		".ts"
 	],
-	"cache": true,
-	"all": true
+	"cache": false
 }
