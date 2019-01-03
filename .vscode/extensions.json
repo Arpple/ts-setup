@@ -8,5 +8,7 @@
         "WallabyJs.quokka-vscode",
         "johnathanludwig.fileswitcher",
         "hardikmodha.create-tests",
+        "philfontaine.autolaunch",
+        "gabrielgrinberg.auto-run-command"
     ]
 }
