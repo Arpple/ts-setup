@@ -1,11 +1,4 @@
 {
-    "mocha.files.glob": "src/**/*.test.ts",
-    "mocha.sideBarOptions": {
-        "autoUpdateTime": 99999,
-    },
-    "mocha.requires": [
-        "ts-node/register"
-    ],
     "fileswitcher.mappings": [
         {
             "from": "src/(.+)\\.(.+)",
@@ -17,12 +10,18 @@
         },
     ],
     "createTests.template.default": [
-        "import { assert } from \"chai\"",
-        "import * as sinon from \"sinon\"",
+        "import test from \"ava\"",
         "",
-        "describe(\"\", () => {",
+        "test(\"\", (assert) => {",
         "",
         "})"
     ],
-    "tslint.autoFixOnSave": true
+    "tslint.autoFixOnSave": true,
+    "auto-run-command.rules": [
+		{
+			"condition": "hasFile: wallaby.js",
+			"command": "wallaby.start",
+			"message": "Running wallaby"
+		}
+	]
 }
