@@ -107,7 +107,9 @@
 
         "semicolon": [true, "never"],
 
-        "space-before-function-paren": [true, "never"],
+        "space-before-function-paren": [true, {
+            "asyncArrow": "always"
+        }],
 
         "space-within-parens": [true, "never"],
 

@@ -6,7 +6,7 @@ test("sync", (assert) => {
     assert.true(doSomething(mockFn))
 })
 
-test("async", async(assert) => {
+test("async", async (assert) => {
     const service: SomeAsyncFn = () => Promise.resolve(true)
     assert.true(await doSomethingAsync(service))
 })

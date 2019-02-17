@@ -6,7 +6,7 @@
   "scripts": {
     "test": "ava",
     "coverage": "nyc ava",
-    "lint": "tslint src/**/*.ts",
+    "lint": "tslint --format stylish src/**/*.ts",
     "build": "rm -rf dist/* && tsc",
     "sandbox": "ts-node ./sandbox.ts"
   },
