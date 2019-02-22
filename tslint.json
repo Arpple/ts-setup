@@ -64,7 +64,7 @@
 
         "triple-equals": true,
 
-        "indent": [true, "spaces"],
+        "indent": [true, "spaces", 4],
 
         "linebreak-style": [true, "LF"],
 
@@ -128,6 +128,20 @@
         // Functional style rules
         "no-this": true,
         "no-class": true,
-        "no-mixed-interface": true
+        "no-mixed-interface": true,
+
+        "prettier": [
+            true,
+            {
+                "printWidth": 120,
+                "tabWidth": 4,
+                "useTabs": false,
+                "semi": false,
+                "singleQuote": false,
+                "trailingComma": "es5",
+                "bracketSpacing": true,
+                "arrowParens": "always"
+            }
+        ]
     }
 }
