@@ -2,8 +2,7 @@
     "defaultSeverity": "error",
     "extends": [
         "tslint:latest",
-        "tslint-immutable",
-        "tslint-config-prettier"
+        "tslint-immutable"
     ],
     "rules": {
         "no-empty-interface": {
@@ -111,13 +110,13 @@
             "asyncArrow": "always"
         }],
 
-        "space-within-parens": [true, "never"],
+        "space-within-parens": [true, 0],
 
         "switch-final-break": true,
 
-        "whitespace": [true, "spaces"],
-
         "no-implicit-dependencies": false,
+
+        "eofline": false,
 
         // Immutability rules
         "readonly-keyword": true,
@@ -128,20 +127,6 @@
         // Functional style rules
         "no-this": true,
         "no-class": true,
-        "no-mixed-interface": true,
-
-        "prettier": [
-            true,
-            {
-                "printWidth": 120,
-                "tabWidth": 4,
-                "useTabs": false,
-                "semi": false,
-                "singleQuote": false,
-                "trailingComma": "es5",
-                "bracketSpacing": true,
-                "arrowParens": "always"
-            }
-        ]
+        "no-mixed-interface": true
     }
 }
