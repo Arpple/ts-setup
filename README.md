@@ -1,9 +1,8 @@
 my typescript template project
 
 include
-- mocha, chai, sinon
-- npm test script run
-- vscode mocha seting
+- ava
+- vscode task setting
 - vscode debugger setting
 
 recommend vs code extension
