@@ -33,5 +33,7 @@
     ],
     "[typescript]": {
         "editor.formatOnSave": true
-    }
+    },
+    "files.insertFinalNewline": true,
+    "eslint.packageManager": "yarn"
 }

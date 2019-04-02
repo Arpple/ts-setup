@@ -116,7 +116,7 @@
 
         "no-implicit-dependencies": false,
 
-        "eofline": false,
+        "eofline": true,
 
         // Immutability rules
         "readonly-keyword": true,
