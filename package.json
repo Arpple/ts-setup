@@ -20,7 +20,9 @@
   "keywords": [],
   "author": "Arpple",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "discord.js": "^11.5.0"
+  },
   "devDependencies": {
     "@types/node": "^10.11.3",
     "ava": "^1.0.1",
