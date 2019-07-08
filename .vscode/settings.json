@@ -1,39 +1,33 @@
 {
-    "fileswitcher.mappings": [
-        {
-            "from": "src/(.+)\\.(.+)",
-            "to": "src/:1.test.:2"
-        },
-        {
-            "from": "src/(.+)\\.test\\.(.+)",
-            "to": "src/:1.:2"
-        },
-    ],
-    "createTests.template.default": [
-        "import test from \"ava\"",
-        "",
-        "test(\"\", (assert) => {",
-        "",
-        "})"
-    ],
-    "auto-run-command.rules": [
-		{
-			"condition": "hasFile: wallaby.js",
-			"command": "wallaby.start",
-			"message": "Running wallaby"
-		}
-    ],
-    "editor.codeActionsOnSave": {
-        "source.fixAll.tslint": true
+  "fileswitcher.mappings": [
+    {
+      "from": "src/(.+)\\.(.+)",
+      "to": "src/:1.test.:2"
     },
-    "tslint.configFile": "tslint.json",
-    "tslint.exclude": [
-        "node_modules",
-        "dist/*"
-    ],
-    "[typescript]": {
-        "editor.formatOnSave": true
+    {
+      "from": "src/(.+)\\.test\\.(.+)",
+      "to": "src/:1.:2"
     },
-    "files.insertFinalNewline": true,
-    "eslint.packageManager": "yarn"
+  ],
+  "createTests.template.default": [
+    "import test from \"ava\"",
+    "",
+    "test(\"\", (assert) => {",
+    "",
+    "})"
+  ],
+  "auto-run-command.rules": [
+    {
+      "condition": "hasFile: wallaby.js",
+      "command": "wallaby.start",
+      "message": "Running wallaby"
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "files.insertFinalNewline": true
 }
