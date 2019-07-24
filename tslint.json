@@ -61,7 +61,7 @@
 
     "triple-equals": true,
 
-    "indent": [true, "spaces", 2],
+    "indent": [true, "tabs", 2],
 
     "linebreak-style": [true, "LF"],
 
@@ -125,6 +125,8 @@
     "newline-per-chained-call": false,
 
     "one-line": false,
+
+    "no-submodule-imports": false,
 
     // Immutability rules
     "readonly-keyword": true,

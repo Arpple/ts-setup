@@ -17,6 +17,11 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "strictFunctionTypes": true,
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["./*"]
+    }
   }
 }

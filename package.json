@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "start:prod": "node bin/index.js",
+    "start": "ts-node -r module-alias/register src/main.ts",
+    "start:prod": "node -r module-alias/register dist/main.js",
     "test": "ava",
     "coverage": "nyc ava",
     "lint": "tslint --format stylish src/**/*.ts",
@@ -20,8 +20,11 @@
   "keywords": [],
   "author": "Arpple",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "module-alias": "^2.2.0"
+  },
   "devDependencies": {
+    "@types/module-alias": "^2.0.0",
     "@types/node": "^10.11.3",
     "ava": "^1.0.1",
     "npm-run-all": "^4.1.5",
@@ -48,5 +51,8 @@
     ],
     "cache": false,
     "sourceMap": true
+  },
+  "_moduleAliases": {
+    "~": "dist"
   }
 }
