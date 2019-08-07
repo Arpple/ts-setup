@@ -21,6 +21,7 @@
   "author": "Arpple",
   "license": "ISC",
   "dependencies": {
+    "fp-ts": "^2.0.3",
     "module-alias": "^2.2.0"
   },
   "devDependencies": {

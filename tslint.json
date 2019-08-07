@@ -157,6 +157,8 @@
 
     "object-literal-sort-keys": false,
 
+    "interface-over-type-literal": false,
+
     "one-variable-per-declaration": true,
 
     "ordered-imports": true,
@@ -186,15 +188,13 @@
 
     "no-submodule-imports": false,
 
-    // Immutability rules
     "readonly-keyword": true,
     "no-object-mutation": true,
     "no-delete": true,
     "no-method-signature": true,
 
-    // Functional style rules
     "no-this": true,
     "no-class": true,
-    "no-mixed-interface": true
+    "no-mixed-interface": false
   }
 }
